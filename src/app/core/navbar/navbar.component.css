@@ -1,0 +1,110 @@
+#mainNav {
+    display: table-cell;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+}
+
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background: #FED136;
+    border: 0;
+}
+
+#mainNav .navbar-brand {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+}
+
+#mainNav .navbar-brand img {
+    height: 2.5rem;
+}
+
+#mainNav span.logo-font {
+    font-family: cassandra;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 0.95em;
+    color: #FED136;
+}
+
+#mainNav .navbar-nav .nav-item {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #FED136;
+    letter-spacing: 0.0625em;
+    text-transform: capitalize;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #FFF;
+    outline: 0;
+}
+
+.menu-text {
+    vertical-align: middle;
+    color: #FED136;
+    font-size: 1em;
+}
+
+
+/* Responsive styling for screen width equal to or greater than the large breakpoint */
+
+@media only screen and (max-width:420px) {
+    #mainNav span.logo-font {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:421px) and (max-width:767px) {
+    #mainNav span.logo-font {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 978px) {
+    #mainNav {
+        padding: 1rem 0rem;
+        border: none;
+        background-color: #000;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand {
+        font-size: 1.5em;
+        transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+        height: 4rem;
+        transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background: #000
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg,
+    #mainNav.navbar-shrink .navbar-brand img {
+        height: 2rem;
+    }
+    #mainNav .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+    #mainNav .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+}
