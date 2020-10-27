@@ -105,18 +105,18 @@ a {
     border-radius: 0
 }
 
-.btn-default {
-    color: #42dca3;
-    border: 1px solid #42dca3;
-    background-color: transparent
+.btn-primary {
+    color: #FFF;
+    border: 1px solid #FEC810;
+    background-color: #FEC810;
 }
 
-.btn-default:focus,
-.btn-default:hover {
+.btn-primary:focus,
+.btn-primary:hover {
     color: #000;
-    border: 1px solid #42dca3;
+    border: 1px solid #FED136;
     outline: 0;
-    background-color: #42dca3
+    background-color: #FED136;
 }
 
 ul.banner-social-buttons {
